@@ -1,3 +1,3 @@
 # Streamify
 
-## A Video Streaming and Chatting Platform built using MERN Stack
+## A Video Calling and Chatting Platform built using MERN Stack
