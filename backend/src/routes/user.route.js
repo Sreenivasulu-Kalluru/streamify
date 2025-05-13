@@ -4,6 +4,7 @@ import {
   acceptFriendRequest,
   getFriendRequest,
   getMyFriends,
+  getOutgoingFriendReqs,
   getRecommendedUsers,
   sendFriendRequest,
 } from '../controllers/user.controller.js';
