@@ -8,9 +8,21 @@ import Notifications from './pages/Notifications.jsx';
 import OnboardingPage from './pages/OnboardingPage.jsx';
 import SignUpPage from './pages/SignUpPage.jsx';
 
+import { useQuery } from '@tanstack/react-query';
 import { Toaster } from 'react-hot-toast';
+import { axiosInstance } from './lib/axios.js';
 
 const App = () => {
+  const { data, isLoading, error } = useQuery({
+    queryKey: ['todo'],
+
+    queryFn: async () => {
+      const res = await axiosInstance.get('http://localhost:5001/api/auth/me');
+      return res.data;
+    },
+  });
+
+  console.log(data);
   return (
     <div className="h-screen" data-theme="night">
       <Routes>
