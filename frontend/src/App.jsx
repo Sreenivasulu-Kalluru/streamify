@@ -17,9 +17,10 @@ const App = () => {
     queryKey: ['todo'],
 
     queryFn: async () => {
-      const res = await axiosInstance.get('http://localhost:5001/api/auth/me');
+      const res = await axiosInstance.get('/auth/me');
       return res.data;
     },
+    retry: false, //
   });
 
   console.log(data);
