@@ -4,8 +4,6 @@
 
 <h1 align="center">✨ Fullstack Chat & Video Calling App ✨</h1>
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
-
 Highlights:
 
 - 🌐 Real-time Messaging with Typing Indicators & Reactions
