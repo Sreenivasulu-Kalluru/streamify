@@ -1,10 +1,10 @@
-import { Link } from "react-router";
-import { LANGUAGE_TO_FLAG } from "../constants";
+import { Link } from 'react-router';
+import { LANGUAGE_TO_FLAG } from '../constants';
 
 const FriendCard = ({ friend }) => {
   return (
-    <div className="card bg-base-200 hover:shadow-md transition-shadow">
-      <div className="card-body p-4">
+    <div className="transition-shadow card bg-base-200 hover:shadow-md">
+      <div className="p-4 card-body">
         {/* USER INFO */}
         <div className="flex items-center gap-3 mb-3">
           <div className="avatar size-12">
@@ -14,17 +14,17 @@ const FriendCard = ({ friend }) => {
         </div>
 
         <div className="flex flex-wrap gap-1.5 mb-3">
-          <span className="badge badge-secondary text-xs">
+          <span className="text-xs badge badge-secondary">
             {getLanguageFlag(friend.nativeLanguage)}
             Native: {friend.nativeLanguage}
           </span>
-          <span className="badge badge-outline text-xs">
+          <span className="text-xs badge badge-outline">
             {getLanguageFlag(friend.learningLanguage)}
             Learning: {friend.learningLanguage}
           </span>
         </div>
 
-        <Link to={`/chat/${friend._id}`} className="btn btn-outline w-full">
+        <Link to={`/chat/${friend._id}`} className="w-full btn btn-outline">
           Message
         </Link>
       </div>
@@ -44,7 +44,7 @@ export function getLanguageFlag(language) {
       <img
         src={`https://flagcdn.com/24x18/${countryCode}.png`}
         alt={`${langLower} flag`}
-        className="h-3 mr-1 inline-block"
+        className="inline-block h-3 mr-1"
       />
     );
   }
