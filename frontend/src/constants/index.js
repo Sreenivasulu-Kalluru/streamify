@@ -164,6 +164,10 @@ export const THEMES = [
 
 export const LANGUAGES = [
   'English',
+  'Telugu',
+  'Tamil',
+  'Kannada',
+  'Malayalam',
   'Spanish',
   'French',
   'German',
@@ -181,6 +185,10 @@ export const LANGUAGES = [
 
 export const LANGUAGE_TO_FLAG = {
   english: 'gb',
+  telugu: 'in',
+  tamil: 'in',
+  karnataka: 'in',
+  malayalam: 'in',
   spanish: 'es',
   french: 'fr',
   german: 'de',
