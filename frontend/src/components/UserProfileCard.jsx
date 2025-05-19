@@ -22,7 +22,7 @@ const UserProfileCard = () => {
 
   return (
     <>
-      <div className="relative inline-block text-left">
+      <div className="inline-block text-left">
         {/* Trigger button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -38,10 +38,10 @@ const UserProfileCard = () => {
 
       {/* Profile Card */}
       {isOpen && (
-        <div className="transition-shadow mt-14 card bg-base-200 hover:shadow-md">
+        <div className="mt-16 mr-16 transition-shadow card bg-base-200 hover:shadow-md">
           <div className="z-10 p-4 card-body">
             {/* USER INFO */}
-            <div className="flex items-center gap-3 mb-3">
+            <div className="flex items-center gap-3 mb-2">
               <div className="avatar size-12">
                 <img src={authUser?.profilePic} alt={authUser?.fullName} />
               </div>
