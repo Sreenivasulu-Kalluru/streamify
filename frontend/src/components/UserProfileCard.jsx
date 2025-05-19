@@ -25,7 +25,7 @@ const UserProfileCard = () => {
       {/* Trigger button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center p-2 space-x-2 transition rounded-full hover:bg-gray-200"
+        className="flex items-center p-2 space-x-2 transition rounded-full"
       >
         <img
           src={authUser?.profilePic}
@@ -37,7 +37,7 @@ const UserProfileCard = () => {
 
       {/* Profile Card */}
       {isOpen && (
-        <div className="transition-shadow card bg-base-200 hover:shadow-md">
+        <div className="mt-12 transition-shadow card bg-base-200 hover:shadow-md">
           <div className="p-4 card-body">
             {/* USER INFO */}
             <div className="flex items-center gap-3 mb-3">
@@ -45,6 +45,10 @@ const UserProfileCard = () => {
                 <img src={authUser?.profilePic} alt={authUser?.fullName} />
               </div>
               <h3 className="font-semibold truncate">{authUser?.fullName}</h3>
+            </div>
+
+            <div>
+              <h4>{authUser?.bio}</h4>
             </div>
 
             <div className="flex flex-wrap gap-1.5 mb-3">
