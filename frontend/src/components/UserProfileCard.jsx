@@ -38,7 +38,7 @@ const UserProfileCard = () => {
 
       {/* Profile Card */}
       {isOpen && (
-        <div className="absolute right-0 z-50 w-64 p-4 mt-[150px] mr-[100px] shadow-xl rounded-2xl hover:shadow-xl">
+        <div className="absolute right-0 z-50 w-64 bg-base-200 mt-[150px] mr-[100px] shadow-xl rounded-2xl hover:shadow-xl">
           <div className="z-10 p-4 card-body">
             {/* USER INFO */}
             <div className="flex items-center gap-3 mb-2">
