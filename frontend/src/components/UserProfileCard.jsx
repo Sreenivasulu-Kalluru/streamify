@@ -26,7 +26,7 @@ const UserProfileCard = () => {
         {/* Trigger button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center p-2 space-x-2 transition rounded-full"
+          className="flex items-center p-2 space-x-2 transition-all rounded-full"
         >
           <img
             src={authUser?.profilePic}
@@ -38,7 +38,7 @@ const UserProfileCard = () => {
 
       {/* Profile Card */}
       {isOpen && (
-        <div className="absolute right-0 z-50 w-64 bg-base-200 mt-[150px] mr-[100px] shadow-xl rounded-2xl hover:shadow-xl">
+        <div className="absolute right-0 z-50 w-64 transition-all bg-base-200 mt-[300px] mr-[200px] shadow-xl rounded-2xl hover:shadow-xl">
           <div className="z-10 p-4 card-body">
             {/* USER INFO */}
             <div className="flex items-center gap-3 mb-2">
