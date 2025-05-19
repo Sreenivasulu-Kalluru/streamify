@@ -31,7 +31,7 @@ const UserProfileCard = () => {
           <img
             src={authUser?.profilePic}
             alt={authUser?.fullName}
-            className="w-6 h-6 rounded-full"
+            className="w-8 h-8 rounded-full"
           />
         </button>
       </div>
@@ -39,7 +39,7 @@ const UserProfileCard = () => {
       {/* Profile Card */}
       {isOpen && (
         <div
-          className="absolute right-0 z-50 w-64 transition-all bg-base-200 border border-transparent mt-[240px] mr-[85px] shadow-xl rounded-2xl hover:shadow-xl"
+          className="absolute right-0 z-50 w-64 transition-all bg-base-200 border border-base-content/10 mt-[240px] mr-[85px] shadow-xl rounded-2xl hover:shadow-xl"
           ref={cardRef}
         >
           <div className="z-10 p-4 card-body">
