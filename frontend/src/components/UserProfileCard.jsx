@@ -21,14 +21,14 @@ const UserProfileCard = () => {
   }, []);
 
   return (
-    <div className="avatar">
+    <div className="relative inline-block text-left">
       {/* Trigger button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center p-2 space-x-2 transition rounded-full hover:bg-gray-200"
       >
         <img
-          src={authUser?.profiePic}
+          src={authUser?.profilePic}
           alt={authUser?.fullName}
           className="w-10 h-10 rounded-full"
           rel="noreferrer"
