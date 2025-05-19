@@ -21,23 +21,25 @@ const UserProfileCard = () => {
   }, []);
 
   return (
-    <div className="relative inline-block text-left">
-      {/* Trigger button */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center p-2 space-x-2 transition rounded-full"
-      >
-        <img
-          src={authUser?.profilePic}
-          alt={authUser?.fullName}
-          className="w-10 h-10 rounded-full"
-        />
-      </button>
+    <>
+      <div className="relative inline-block text-left">
+        {/* Trigger button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center p-2 space-x-2 transition rounded-full"
+        >
+          <img
+            src={authUser?.profilePic}
+            alt={authUser?.fullName}
+            className="w-10 h-10 rounded-full"
+          />
+        </button>
+      </div>
 
       {/* Profile Card */}
       {isOpen && (
-        <div className="transition-shadow card bg-base-200 hover:shadow-md">
-          <div className="z-10 p-4 mt-12 card-body">
+        <div className="transition-shadow mt-14 card bg-base-200 hover:shadow-md">
+          <div className="z-10 p-4 card-body">
             {/* USER INFO */}
             <div className="flex items-center gap-3 mb-3">
               <div className="avatar size-12">
@@ -63,7 +65,7 @@ const UserProfileCard = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
