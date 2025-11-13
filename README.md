@@ -2,7 +2,7 @@
 
 ## A Video Calling and Chatting Platform built using MERN Stack
 
-<h1 align="center">✨ Fullstack Chat & Video Calling App ✨</h1>
+### <h1>Fullstack Chat & Video Calling App</h1>
 
 Highlights:
 
